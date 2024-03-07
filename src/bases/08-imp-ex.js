@@ -1,6 +1,6 @@
 import heroes, { owners } from "../data/heroes";
 
-console.log( owners );
+//console.log( owners );
 
 //find
 const getHeroeById = ( id ) => {
@@ -8,14 +8,17 @@ const getHeroeById = ( id ) => {
     
 }
 
-console.log( getHeroeById(2) );
+//console.log( getHeroeById(2) );
 
 //filter
 const getHeroesByOwner = (owner) => {
     return heroes.filter( ( heroe ) => heroe.owner === owner );
 }
 
+export{
+    getHeroeById,
+    getHeroesByOwner
+}
 
-
-console.log( getHeroesByOwner( 'DC' ) );
+//console.log( getHeroesByOwner( 'DC' ) );
 
